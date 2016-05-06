@@ -178,6 +178,7 @@ body {
     position: absolute;
     bottom: 5%;
     padding: 10px 15px;
+    border: none;
 }
 
 .form_button_style {

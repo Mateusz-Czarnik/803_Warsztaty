@@ -77,8 +77,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var composePictures = document.querySelectorAll(".compose_slider ul > li");
     var chairSelect = document.querySelectorAll(".chair_select option");
+    var currentVisiblePictureCompose = 2;
 
-    // composePictures[currentVisiblePicture].classList.add("visible");
+    composePictures[currentVisiblePictureCompose].classList.add("visible");
 
 
 
