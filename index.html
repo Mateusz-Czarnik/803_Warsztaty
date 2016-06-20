@@ -10,14 +10,15 @@
 </head>
 
 <body>
-    <header class="nav">
+    <nav>
         <div class="wrapper w1"><a href="" class="nav_logo uppercase">sit <span class="modify">on</span> chair</a>
             <ul class="nav_list">
                 <li>kontakt
                 </li>
                 <li>galeria
                 </li>
-                <li>o firmie
+                <li class="dropdown">
+                    o firmie
                     <ul class="dropdown_list">
                         <li><a href="">Aktualności</a></li>
                         <li><a href="">Nasz team</a></li>
@@ -26,7 +27,7 @@
                 </li>
             </ul>
         </div>
-    </header>
+    </nav>
     <main class="description">
         <div class="wrapper w2">
             <div class="slider float_l main_slider">
@@ -41,7 +42,9 @@
             <div class="desc_div float_r">
                 <h1 class="uppercase desc_header">sit <span class="modify">on</span> our <span class="modify">chair</span>
             </h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et sapien eu est auctor dignissim. Pellentesque tempor suscipit tempor. In vel ultrices massa. Mauris sodales tincidunt nisl et feugiat. Nunc tempor risus congue mi lobortis tincidunt. Quisque id enim aliquet nunc semper mattis ut quis justo. Sed non nunc in eros convallis tempor vitae quis ex. Fusce vitae quam sit amet nisl efficitur tincidunt et sit amet nibh. Donec suscipit eget sapien vel pharetra. </p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et sapien eu est auctor dignissim. Pellentesque tempor suscipit tempor. In vel ultrices massa. Mauris sodales tincidunt nisl et feugiat. Nunc tempor risus congue mi lobortis
+                    tincidunt. Quisque id enim aliquet nunc semper mattis ut quis justo. Sed non nunc in eros convallis tempor vitae quis ex. Fusce vitae quam sit amet nisl efficitur tincidunt et sit amet nibh. Donec suscipit eget sapien vel pharetra.
+                </p>
                 <a href="" class="uppercase desc_button button_style">zobacz więcej</a>
             </div>
         </div>
@@ -53,7 +56,8 @@
             <div class="section_div float_r">
                 <div></div>
                 <a href="" class="main_header">Finds all inputs</a>
-                <p>Pellentesque tempor suscipit tempor. In vel ultrices massa. Mauris sodales tincidunt nisl et feugiat. Nunc tempor risus congue mi lobortis tincidunt. Quisque id enim aliquet nunc semper mattis ut quis justo. Sed non nunc in eros convallis tempor vitae quis ex.</p>
+                <p>Pellentesque tempor suscipit tempor. In vel ultrices massa. Mauris sodales tincidunt nisl et feugiat. Nunc tempor risus congue mi lobortis tincidunt. Quisque id enim aliquet nunc semper mattis ut quis justo. Sed non nunc in eros convallis
+                    tempor vitae quis ex.</p>
                 <p>Pellentesque tempor suscipit tempor. In vel ultrices massa. Mauris sodales tincidunt nisl et feugiat. </p>
             </div>
         </div>
@@ -107,26 +111,26 @@
             </div>
             <div class="compose_div float_l">
                 <form class="compose_form">
-                    <select required class="chair_select">
-                        <option value="" disabled selected hidden>Wybierz rodzaj</option>
-                        <option value="0">Clair</option>
-                        <option value="1">Margarita</option>
-                        <option value="2">Selena</option>
+                    <select class="type" required class="chair_select">
+                        <option  value="" disabled selected hidden>Wybierz rodzaj</option>
+                        <option value="1">Clair</option>
+                        <option value="2">Margarita</option>
+                        <option value="3">Selena</option>
                     </select>
-                    <select required>
-                        <option value="" disabled selected hidden>Wybierz kolor</option>
-                        <option value="0">Czerwony</option>
-                        <option value="1">Czarny</option>
-                        <option value="2">Pomarańczowy</option>
+                    <select class="color" required>
+                        <option  value="" disabled selected hidden>Wybierz kolor</option>
+                        <option value="1">Czerwony</option>
+                        <option value="2">Czarny</option>
+                        <option value="3">Pomarańczowy</option>
                     </select>
-                    <select required>
-                        <option value="" disabled selected hidden>Wybierz materiał</option>
-                        <option value="0">Tkanina</option>
-                        <option value="1">Skóra</option>
+                    <select class="material" required>
+                        <option  value="" disabled selected hidden>Wybierz materiał</option>
+                        <option value="1">Tkanina</option>
+                        <option value="2">Skóra</option>
                     </select>
                 </form>
                 <label class="compose_checkbox_label">
-                    <input type="checkbox" class="checkbox_style"><span class="checkbox_desc">Transport</span></label>
+                    <input type="checkbox" class="transport-checkbox checkbox_style"><span class="checkbox_desc">Transport</span></label>
             </div>
             <div class="slider compose_slider compose_center">
                 <ul>
@@ -139,41 +143,38 @@
                 <div class="compose_divs_style compose_options">
                     <table>
                         <tr>
-                            <td>Rodzaj krzesła</td>
+                            <td class="chair-type"></td>
                         </tr>
                         <tr>
-                            <td>Kolor</td>
+                            <td class="chair-color"></td>
                         </tr>
                         <tr>
-                            <td>Tkanina</td>
+                            <td class="chair-material"></td>
                         </tr>
                         <tr>
-                            <td>Transport</td>
+                            <td class="chair-transport"></td>
                         </tr>
                     </table>
                 </div>
                 <div class="compose_divs_style compose_price float_r">
                     <table>
                         <tr>
-                            <td>Test</td>
+                            <td class="chair-price"></td>
                         </tr>
                         <tr>
-                            <td>Test</td>
+                            <td class="color-price"></td>
                         </tr>
                         <tr>
-                            <td>Test</td>
+                            <td class="material-price"></td>
                         </tr>
                         <tr>
-                            <td>Test</td>
+                            <td class="transport-price"></td>
                         </tr>
                     </table>
                 </div>
                 <div class="compose_divs_style compose_summary">
-                    <table>
-                        <tr>
-                            <td>Suma</td>
-                        </tr>
-                    </table>
+                  <span>Suma</span>
+                  <span class="price-sum"></span>
                 </div>
                 <button type="submit" class="uppercase form_button_style button_style compose_button">Zamawiam</button>
             </div>
@@ -184,7 +185,7 @@
             <h2 class="uppercase main_header">kontakt</h2>
             <div class="float_l form_div form_div_l">
                 <input type="text" name="name" placeholder="Imię" class="input_form float_l">
-                <input type="email" name="name" placeholder="email" class="input_form float_l">
+                <input type="email" name="name" placeholder="Email" class="input_form float_l">
                 <textarea rows="7" cols="50" class="input_form float_l msg_text" placeholder="Wiadomość"></textarea>
             </div>
             <div class="float_r form_div"><img src="images/red_chair.png" class="form_img">
